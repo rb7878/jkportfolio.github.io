@@ -1,0 +1,47 @@
+.form_label {
+	display: flex;
+	flex-flow: column-reverse;
+	
+	.form_ctrl_ak ,
+	.form_placeholder_label {
+		transition: all 0.2s;
+		touch-action: manipulation;
+	}
+	
+	.form_ctrl_ak {
+		padding: 5px 0px;
+		border: none;
+		border-bottom: 1px solid #c5c5c5;
+		
+		&:focus {
+			outline: 0;
+			border-bottom: 1px solid $main;
+		}
+	}
+	.form_ctrl_ak:placeholder-shown + label {
+		cursor: text;
+		overflow: hidden;
+		transform: translate(0, 2.125rem);
+		color: #a2a2a2;
+		font-size: 16px;
+	}
+	::-webkit-input-placeholder {
+		opacity: 0;
+		transition: inherit;
+	}
+
+	.form_ctrl_ak:focus::-webkit-input-placeholder {
+	    opacity: 1;
+	}
+
+	.form_ctrl_ak:not(:placeholder-shown) + label,
+	.form_ctrl_ak:focus + label {
+		transform: translate(0, 0) scale(1);
+		cursor: pointer;
+		font-size:16px;
+	}
+	
+	.form_placeholder_label {
+	
+	}	
+}

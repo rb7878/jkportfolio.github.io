@@ -1,0 +1,234 @@
+/*!
+Theme Name: Jitendra - Portfolio
+Theme URI: https://appicsoftwares.com/
+Author: W3ondemand
+Author URI: 
+Description: Description
+Version: 2.1
+License: GNU General Public License v3 or later
+License URI: LICENSE
+Text Domain: appicsoftwares.com
+*/
+/*---------------------------------------------------
+               THEM CSS
+----------------------------------------------------*/
+:root {
+  --Main: #2196f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  width: 100%;
+  height: 100%;
+  font-family: "Jost", sans-serif;
+  overflow-x: hidden;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Main Styles */
+.portfolioSection {
+  padding: 50px 0px;
+}
+.portfolioSection .authorDetails .bannerImg {
+  width: 100%;
+  background: #e2e1e1;
+  padding: 10px;
+  border-radius: 5px;
+}
+.portfolioSection .authorDetails .authorDetailsBody {
+  text-align: center;
+  margin-top: -70px;
+}
+.portfolioSection .authorDetails .authorDetailsBody .profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #e2e1e1;
+  padding: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 8px;
+}
+.portfolioSection .authorDetails .authorDetailsBody h5 {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+.portfolioSection .authorDetails .authorDetailsBody p {
+  margin: 0;
+}
+.portfolioSection .filter_menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+.portfolioSection .filter_menu li a {
+  display: block;
+  background: #eaeaea;
+  padding: 8px 20px;
+  border-radius: 5px;
+  margin: 0px 5px;
+  min-width: 110px;
+  text-align: center;
+  color: #222;
+  text-decoration: none;
+}
+.portfolioSection .filter_menu li a.active_filter {
+  background: var(--Main);
+  color: #fff;
+}
+
+.portfolioBox {
+  margin-top: 20px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.portfolioBox .portfolioImg {
+  width: 100%;
+}
+.portfolioBox .popupViewBtn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding: 0px 0px;
+  min-width: auto;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  color: #fff !important;
+  background: rgba(34, 34, 34, 0.768627451) !important;
+  font-size: 14px;
+  border: none !important;
+  border-radius: 50px;
+}
+.portfolioBox .action_btn {
+  padding: 30px 20px 25px 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(81%, rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 81%);
+}
+.portfolioBox .action_btn h5 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+.portfolioBox .action_btn .btn {
+  background: #ffffff !important;
+  color: var(--Main) !important;
+  padding: 0px 10px;
+  height: 30px;
+  font-weight: 500;
+  line-height: 25px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  border: none !important;
+}
+.portfolioBox .action_btn .btn i {
+  font-size: 12px;
+  position: relative;
+  top: 0px;
+}
+.portfolioBox .action_btn .btn span {
+  margin: 0px 3px;
+}
+.portfolioBox .action_btn .btn.viewBtn {
+  position: absolute;
+  right: 0;
+  padding: 0px 10px;
+  height: 30px;
+  font-weight: 500;
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  color: #fff !important;
+  background: var(--Main) !important;
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+  .portfolioSection .authorDetails .bannerImg {
+    height: auto;
+  }
+  .portfolioSection .filter_menu {
+    display: inline-block;
+    text-align: center;
+  }
+  .portfolioSection .filter_menu li {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .portfolioBox {
+    margin-top: 15px;
+  }
+  .portfolioSection .authorDetails .bannerImg {
+    display: none;
+  }
+  .portfolioSection .authorDetails .authorDetailsBody {
+    margin-top: 0px;
+  }
+  .portfolioSection .filter_menu li a {
+    padding: 8px 10px;
+    margin: 0px 1px;
+    min-width: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1279px) {
+  .container {
+    max-width: 1180px;
+  }
+}
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY END///////////////
+=======================================================*/

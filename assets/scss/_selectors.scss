@@ -1,0 +1,13 @@
+/* css seclector */
+
+::-moz-selection {
+  color: #fff;
+  background: $main; 
+}
+
+::selection {
+  color: #fff;
+  background: $main; 
+}
+
+/* end css seclector */
